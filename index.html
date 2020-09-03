@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 		<meta name="author" content="">
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 <!--Less styles -->
    <!-- Other Less css file //different less files has different color scheam
 	<link rel="stylesheet/less" type="text/css" href="themes/less/simplex.less">
@@ -601,7 +600,12 @@
 
 <script type="text/javascript" src="http://localhost:8080/campaign.js"></script>
 <script>
-	campaign.init({email: "testformweb@gmail.com", phone: "+78908588550"});
+	campaign.init({
+		email: "testformweb@gmail.com",
+		phone: "+78908588550",
+		contactid: "7140fd01603",
+		nonauthcontactid: "4260hsd1lk3"
+	});
 	campaign.triggerEvent("add-new-tv", {
 		article: "345555",
 		phone: "+7859599555"
