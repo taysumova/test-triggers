@@ -412,7 +412,7 @@
 			  </div>
 			  </div>
 		</div>
-	<h4>Latest Products </h4>
+	<h4 onclick="campaign.triggerEvent('test')">Latest Products </h4>
 			  <ul class="thumbnails">
 				<li class="span3">
 				  <div class="thumbnail">
@@ -423,7 +423,7 @@
 						Lorem Ipsum is simply dummy text. 
 					  </p>
 					 
-					  <h4 style="text-align:center" onclick="campaign.triggerEvent('test')"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
+					  <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">$222.00</a></h4>
 					</div>
 				  </div>
 				</li>
@@ -598,8 +598,13 @@
 </body>
 </html>
 
-<script type="text/javascript" src="https://campaign.manzanagroup.ru/campaign.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/campaign.js"></script>
 <script>
-	campaign.init("35984985-595995-595995", {email: "testformweb@gmail.com", phone: "78908588550"});
-	campaign.triggerEvent("open-category");
+	campaign.init({email: "testformweb@gmail.com", phone: "+78908588550"});
+	campaign.triggerEvent("add-new-tv", {
+		article: "345555",
+		phone: "+7859599555"
+	});
+	campaign.triggerEvent("add-new-tv-2", {
+	});
 </script>
